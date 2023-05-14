@@ -98,7 +98,7 @@ nav {
     z-index: 10;
     top: 0;
     left: 0;
-
+padding: .6rem;
 }
 
 .nav-container {
@@ -802,10 +802,18 @@ a.menu-item h3 {
 /*......................MEDIA QUERY START...........................*/
 /* ..................LAPTOP.......................*/
 @media(max-width:1220px) {
+    nav{
+        padding: .5rem;
+    }
     .container {
         width: 96%;
     }
-
+.main-right .messages {
+    width: 95%;
+}
+.request{
+    width: 95%;
+}
     .main-container {
         grid-template-columns: 5vw auto 30vw;
         gap: 2em;
@@ -831,15 +839,13 @@ a.menu-item h3 {
         display: none;
     } 
 
-    .theme {
-        top: 6rem;
-        left: 13%;
-        width: 50%;
-        height: 26rem;
+    .theme{top: 5rem;
+    left: 18.5%;
+    width: 51%;
+    height: 26rem;
     }
-
     .card {
-        width: 81%;
+        width: 72%;
         margin: auto;
         height: 11rem;
     }
@@ -858,18 +864,20 @@ a.menu-item h3 {
 }
 
 /*..................TABLET & PHONE.......................*/
- @media (max-width:991px) {
+ @media (max-width:770px) {
+    nav{
+        padding: 1rem;
+    }
     .container {
         gap: 0;
     }
-
     nav .search-bar {
         display: none;
     }
 
     .main-container {
-        grid-template-columns:0 auto 9rem;
-        gap: 1rem;
+        grid-template-columns:3rem auto 7rem;
+        gap: 2rem;
     }
 
     .main-left {
@@ -909,7 +917,7 @@ a.menu-item h3 {
     .card {
         width: 70%;
         margin: auto;
-        height: 9.6rem;
+        height: 10.6rem;
     }
 
     .choose-color {
@@ -929,6 +937,9 @@ a.menu-item h3 {
 }
 
 @media(max-width:573px) {
+    nav{
+        padding: 1rem;
+    }
     .storys {
         gap: .4rem;
     }
@@ -950,12 +961,14 @@ a.menu-item h3 {
     .theme {
         width: 70%;
         left: 3rem;
-        height: 20rem;
+        height:28rem;
+        top: 8rem;
     }
 
     .card {
         width: 70%;
         margin: auto;
+        height: 10.5rem;
     }
 
     .choose-color {
@@ -964,8 +977,9 @@ a.menu-item h3 {
     }
 
     .choose-background {
-        width: 50%;
+        width: 65%;
         margin: auto;
+      
     }
 
 
